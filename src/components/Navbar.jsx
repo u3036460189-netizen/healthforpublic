@@ -55,7 +55,7 @@ export default function Navbar() {
 
       <div className="container pt-3 sm:pt-4">
         <nav
-          aria-label="Primary"
+          aria-label="主要導覽"
           className={cn(
             'relative flex items-center justify-between gap-4 rounded-full border px-4 transition-all duration-500 ease-out sm:px-5',
             scrolled || open
@@ -97,7 +97,7 @@ export default function Navbar() {
               onClick={() => setOpen((value) => !value)}
               aria-expanded={open}
               aria-controls="mobile-menu"
-              aria-label={open ? 'Close menu' : 'Open menu'}
+              aria-label={open ? '關閉選單' : '開啟選單'}
               className="grid h-10 w-10 place-items-center rounded-full border border-ink/10 bg-cream-100/80 text-ink backdrop-blur transition-colors hover:border-ink/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 lg:hidden"
             >
               <Icon name={open ? 'close' : 'menu'} className="h-5 w-5" />

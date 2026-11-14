@@ -4,7 +4,7 @@ import Icon from './ui/Icon.jsx'
 import Reveal from './ui/Reveal.jsx'
 import SectionHeading from './ui/SectionHeading.jsx'
 
-const credentials = ['Registered nurse', '12 yrs in community health', 'Health educator']
+const credentials = ['註冊護理師', '12 年社區衛生經驗', '衛教講師']
 
 export default function Mission() {
   return (
@@ -27,23 +27,19 @@ export default function Mission() {
               <SectionHeading
                 id="approach-title"
                 tone="dark"
-                eyebrow="Our approach"
-                title="Hi — I&rsquo;m the nurse behind Health for Public."
+                eyebrow="我們的理念"
+                title="嗨——我是寫下 Health for Public 的護理師。"
               />
             </Reveal>
 
             <Reveal delay={120}>
               <div className="mt-6 max-w-xl space-y-4 text-[15px] leading-relaxed text-cream/70 sm:text-base">
                 <p>
-                  For twelve years I&rsquo;ve worked community health — school gates,
-                  neighbourhood clinics, workplace canteens. Again and again I met
-                  families who wanted to do the right thing but were drowning in
-                  contradictory, frightening advice.
+                  過去十二年，我在社區衛生現場工作——校門口、鄰里診間、職員餐廳。一次又一次，我遇到想做對事情的家庭，卻被矛盾又嚇人的資訊淹沒。
                 </p>
                 <p>
-                  Health for Public is my answer: one nurse, translating infectious
-                  disease science into small, doable steps — so flu, measles and
-                  everything else meet a household that is ready for them.
+                  Health for Public
+                  就是我的答案：由一位護理師，把傳染病科學翻譯成小而可行的步驟——讓流感、麻疹和其他疾病，遇到的是有準備的家庭。
                 </p>
               </div>
             </Reveal>
@@ -63,8 +59,8 @@ export default function Mission() {
 
             <Reveal delay={280}>
               <div className="mt-9 flex flex-wrap items-center gap-4">
-                <Button href="#services" variant="ghost" size="lg">
-                  Explore services
+                <Button href="#articles" variant="ghost" size="lg">
+                  瀏覽文章
                   <Icon
                     name="arrowRight"
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -75,7 +71,7 @@ export default function Mission() {
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-cream/70 underline-offset-4 transition-colors hover:text-gold-300 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
                 >
                   <Icon name="mail" className="h-4 w-4" />
-                  Write to me directly
+                  直接寫信給我
                 </a>
               </div>
             </Reveal>
@@ -86,11 +82,10 @@ export default function Mission() {
             <figure className="relative rounded-[2.25rem] border border-white/15 bg-white/5 p-8 shadow-soft backdrop-blur-xl sm:p-10">
               <Icon name="quote" className="h-8 w-8 text-gold" strokeWidth={1.4} />
               <blockquote className="mt-5 font-display text-xl font-medium leading-snug text-cream sm:text-2xl">
-                &ldquo;Public health isn&rsquo;t about fear. It&rsquo;s about knowing
-                exactly what to do next — and doing it together.&rdquo;
+                &ldquo;公共衛生不是要你害怕，而是清楚知道下一步該做什麼——然後一起做到。&rdquo;
               </blockquote>
               <figcaption className="mt-5 text-sm text-cream/55">
-                — Workshop participant, Riverside Community Centre
+                ——講座參與者，河岸社區中心
               </figcaption>
             </figure>
 

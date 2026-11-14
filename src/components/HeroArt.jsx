@@ -47,7 +47,7 @@ export default function HeroArt() {
             viewBox="0 0 520 640"
             className="h-auto w-full"
             role="img"
-            aria-label="Illustration of a protective shield resting among leaves"
+            aria-label="插畫：被葉子環繞的防護盾牌"
           >
             <defs>
               <radialGradient id="heroHalo" cx="50%" cy="42%" r="75%">
@@ -123,43 +123,43 @@ export default function HeroArt() {
               <span className="absolute inline-flex h-full w-full animate-pulse-soft rounded-full bg-sage motion-reduce:animate-none" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-sage-600" />
             </span>
-            Seasonal watch
+            季節疫情觀測
           </p>
           <ul className="mt-2.5 space-y-1.5 text-[11px] font-medium text-ink/75">
             <li className="flex items-center justify-between gap-2">
               <span className="flex items-center gap-1.5">
                 <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-gold-600" />
-                Influenza
+                流感
               </span>
-              <span className="text-ink/55">High</span>
+              <span className="text-ink/55">高</span>
             </li>
             <li className="flex items-center justify-between gap-2">
               <span className="flex items-center gap-1.5">
                 <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-sage" />
-                Norovirus
+                諾羅病毒
               </span>
-              <span className="text-ink/55">Rising</span>
+              <span className="text-ink/55">上升</span>
             </li>
             <li className="flex items-center justify-between gap-2">
               <span className="flex items-center gap-1.5">
                 <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/60" />
-                Measles
+                麻疹
               </span>
-              <span className="text-ink/55">Watch</span>
+              <span className="text-ink/55">留意</span>
             </li>
           </ul>
         </div>
 
-        {/* Floating glass card — kit ready */}
+        {/* Floating glass card — latest guide */}
         <div className="absolute -right-1 bottom-14 w-[190px] animate-float-slow rounded-2xl border border-white/10 bg-ink/85 p-3.5 text-cream shadow-soft backdrop-blur-md motion-reduce:animate-none sm:-right-6 sm:bottom-20">
           <p className="flex items-center gap-2 text-[11px] font-semibold">
-            <span className="grid h-6 w-6 place-items-center rounded-full bg-gold text-ink">
-              <Icon name="check" className="h-3.5 w-3.5" strokeWidth={2.4} />
+            <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gold text-ink">
+              <Icon name="book" className="h-3.5 w-3.5" strokeWidth={1.9} />
             </span>
-            Home kit restocked
+            本週新文章
           </p>
           <p className="mt-1.5 pl-8 text-[10.5px] leading-snug text-cream/60">
-            12 essentials · next check 1 Dec
+            諾羅病毒 72 小時防堵 · 5 分鐘讀完
           </p>
         </div>
 
@@ -178,11 +178,11 @@ export default function HeroArt() {
               />
             </defs>
             <text
-              fontSize="9"
-              letterSpacing="2.4"
-              className="fill-ink/60 font-display font-semibold uppercase"
+              fontSize="10"
+              letterSpacing="2"
+              className="fill-ink/60 font-display font-semibold"
             >
-              <textPath href="#badge-circle">Prevention • Care • Community •</textPath>
+              <textPath href="#badge-circle">預防・關懷・社群・</textPath>
             </text>
           </svg>
           <span className="absolute inset-0 grid place-items-center">

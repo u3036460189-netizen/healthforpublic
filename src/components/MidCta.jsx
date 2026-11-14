@@ -19,23 +19,21 @@ export default function MidCta() {
 
             <div className="relative mx-auto max-w-2xl">
               <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink/70">
-                Free 15-minute call
+                免費下載
               </p>
               <h2
                 id="midcta-title"
                 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl"
               >
-                Start with one conversation. Leave with a plan.
+                拿走這份 10 分鐘居家檢查清單。
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-ink/70 sm:text-base">
-                Bring one worry about your household&rsquo;s health. You&rsquo;ll leave
-                with three clear steps — no scare tactics, no 40-page PDF, no
-                pressure to buy anything.
+                這是我陪伴家庭走過的完整檢查流程：每個房間五項檢查，一頁搞定，沒有術語。訂閱後會隨週二簡報一起寄到你的信箱。
               </p>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <Button href={site.ctaHref} variant="ink" size="lg">
-                  {site.ctaLabel}
+                  把清單寄給我
                   <Icon
                     name="arrowRight"
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -44,7 +42,7 @@ export default function MidCta() {
               </div>
 
               <p className="mt-5 text-xs font-medium text-ink/70">
-                No commitment · Cancel anytime · Yours to keep either way
+                加入 4,200 個認真防疫的家庭 · 隨時取消訂閱
               </p>
             </div>
           </div>

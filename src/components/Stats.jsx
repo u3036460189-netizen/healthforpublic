@@ -22,7 +22,7 @@ function StatItem({ value, suffix, label, delay }) {
 export default function Stats() {
   return (
     <section
-      aria-label="Impact at a glance"
+      aria-label="防疫成效速覽"
       className="border-y border-ink/10 bg-cream-100/70"
     >
       <div className="container">

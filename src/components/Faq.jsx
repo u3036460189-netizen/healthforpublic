@@ -66,16 +66,16 @@ export default function Faq() {
             <Reveal>
               <SectionHeading
                 id="faq-title"
-                eyebrow="FAQ"
-                title="Questions, answered honestly"
-                description="The things people ask before they book — answered the way I’d answer across the kitchen table."
+                eyebrow="常見問題"
+                title="誠實回答你的疑問"
+                description="大家在閱讀前最常問的問題——用我在餐桌旁回答的方式寫成。"
               />
             </Reveal>
             <Reveal delay={140}>
               <div className="mt-8">
                 <Button href={`mailto:${site.email}`} variant="secondary">
                   <Icon name="mail" className="h-4 w-4 text-gold-600" />
-                  Ask your own question
+                  直接問我你的問題
                 </Button>
               </div>
             </Reveal>

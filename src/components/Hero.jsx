@@ -28,18 +28,18 @@ export default function Hero() {
                   <span className="absolute inline-flex h-full w-full animate-pulse-soft rounded-full bg-gold motion-reduce:animate-none" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-gold-600" />
                 </span>
-                Public health nursing · Disease prevention
+                公共衛生護理 · 傳染病防治
               </p>
             </Reveal>
 
             <Reveal delay={90}>
               <h1
                 id="hero-title"
-                className="mt-6 max-w-2xl font-display text-[2.55rem] font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl xl:text-[4.1rem]"
+                className="mt-6 max-w-2xl font-display text-[2.35rem] font-semibold leading-[1.12] tracking-tight text-ink sm:text-[3.4rem] xl:text-[3.9rem]"
               >
-                Keep the people you love{' '}
+                讓你在乎的人，
                 <span className="relative inline-block whitespace-nowrap">
-                  a step ahead
+                  永遠比傳染病
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 220 12"
@@ -54,16 +54,14 @@ export default function Hero() {
                       strokeLinecap="round"
                     />
                   </svg>
-                </span>{' '}
-                of infection.
+                </span>
+                快一步。
               </h1>
             </Reveal>
 
             <Reveal delay={180}>
               <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-ink/70 sm:text-lg">
-                I&rsquo;m a public health nurse making prevention simple — plain-language
-                guidance, practical habits and ready-to-use protection for the
-                infectious diseases that spread closest to home.
+                我是一位公共衛生護理師，用白話寫出貼近家庭的傳染病防治文章——哪些方法真的有效、哪些可以忽略，以及第一步該做什麼。
               </p>
             </Reveal>
 
@@ -76,8 +74,8 @@ export default function Hero() {
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                   />
                 </Button>
-                <Button href="#services" variant="secondary" size="lg">
-                  See what&rsquo;s included
+                <Button href="#articles" variant="secondary" size="lg">
+                  瀏覽全部文章
                   <Icon
                     name="arrowDown"
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"

@@ -6,9 +6,9 @@ import Reveal from './ui/Reveal.jsx'
 import SectionHeading from './ui/SectionHeading.jsx'
 
 const benefits = [
-  'Seasonal outbreak watch for your region',
-  'Printable household checklists and room cards',
-  'Early access to workshops and kit restocks',
+  '你所在地區的季節疫情觀測',
+  '可列印的居家檢查清單與房間提示卡',
+  '讀者提問，每月 Q&A 解答',
 ]
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -22,11 +22,11 @@ export default function Newsletter() {
     event.preventDefault()
     if (!EMAIL_PATTERN.test(email.trim())) {
       setStatus('error')
-      setMessage('Please enter a valid email address — e.g. you@example.com.')
+      setMessage('請輸入有效的電子郵件，例如 you@example.com。')
       return
     }
     setStatus('success')
-    setMessage('You’re in. Watch your inbox on Tuesday.')
+    setMessage('訂閱成功，週二的簡報見！')
   }
 
   return (
@@ -49,9 +49,9 @@ export default function Newsletter() {
               <SectionHeading
                 id="newsletter-title"
                 tone="dark"
-                eyebrow="Stay in the loop"
-                title="The weekly prevention brief"
-                description="One short email every Tuesday: what’s circulating in your region, one habit to build, and one myth to retire. Written by a nurse, readable in three minutes."
+                eyebrow="掌握最新動態"
+                title="每週防疫簡報"
+                description="每週二一封短郵件：你的地區正在流行什麼、一個該養成的習慣、一個該退休的迷思。護理師執筆，三分鐘讀完。"
               />
             </Reveal>
 
@@ -73,7 +73,7 @@ export default function Newsletter() {
 
             <Reveal delay={200}>
               <div className="mt-10 border-t border-white/10 pt-8">
-                <p className="text-sm font-semibold text-cream">Prefer a direct line?</p>
+                <p className="text-sm font-semibold text-cream">偏好直接聯絡？</p>
                 <a
                   href={`mailto:${site.email}`}
                   className="mt-2 inline-flex items-center gap-2 font-display text-lg font-semibold text-gold-300 underline-offset-4 transition-colors hover:text-gold-200 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
@@ -90,10 +90,10 @@ export default function Newsletter() {
           <Reveal delay={160}>
             <div className="rounded-[2rem] border border-white/15 bg-white/5 p-7 shadow-soft backdrop-blur-xl sm:p-9">
               <h3 className="font-display text-xl font-semibold tracking-tight text-cream">
-                Join {`4,200`} careful households
+                加入 4,200 個認真防疫的家庭
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-cream/60">
-                No spam, no fear-mongering. Unsubscribe in one click.
+                不垃圾、不恐嚇。隨時一鍵取消訂閱。
               </p>
 
               {status === 'success' ? (
@@ -107,7 +107,7 @@ export default function Newsletter() {
                   <div>
                     <p className="text-sm font-semibold text-cream">{message}</p>
                     <p className="mt-1 text-xs text-cream/60">
-                      Your first brief arrives with this week’s outbreak watch.
+                      第一封簡報會附上本週的疫情觀測。
                     </p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Newsletter() {
                       htmlFor="newsletter-email"
                       className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-cream/60"
                     >
-                      Email address
+                      電子郵件
                     </label>
                     <input
                       id="newsletter-email"
@@ -145,7 +145,7 @@ export default function Newsletter() {
                   )}
 
                   <Button as="button" type="submit" className="w-full">
-                    Subscribe to the brief
+                    訂閱每週簡報
                     <Icon
                       name="arrowRight"
                       className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -153,9 +153,7 @@ export default function Newsletter() {
                   </Button>
 
                   <p id="newsletter-note" className="text-xs leading-relaxed text-cream/55">
-                    By subscribing you agree to receive the weekly brief. Your address
-                    is never shared or sold, and every email includes a one-click
-                    unsubscribe.
+                    訂閱即表示同意收到每週簡報。你的信箱不會被分享或出售，每封信都附有一鍵取消訂閱連結。
                   </p>
                 </form>
               )}

@@ -1,14 +1,14 @@
 import { cn } from '../lib/cn.js'
-import { navLinks, services, site } from '../data/content.js'
+import { navLinks, site, topics } from '../data/content.js'
 import Button from './ui/Button.jsx'
 import Icon from './ui/Icon.jsx'
 import Logo from './ui/Logo.jsx'
 import Reveal from './ui/Reveal.jsx'
 
 const socials = [
-  { label: 'Email us', href: `mailto:${site.email}`, icon: 'mail' },
-  { label: 'Weekly prevention brief', href: '#contact', icon: 'sparkle' },
-  { label: 'Field notes blog', href: '#notes', icon: 'book' },
+  { label: '寫信給我們', href: `mailto:${site.email}`, icon: 'mail' },
+  { label: '每週防疫簡報', href: '#contact', icon: 'sparkle' },
+  { label: '防疫筆記文章', href: '#articles', icon: 'book' },
 ]
 
 export default function Footer() {
@@ -31,11 +31,10 @@ export default function Footer() {
                 id="footer-cta-title"
                 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight text-cream sm:text-[2.5rem]"
               >
-                Ready when you are — let&rsquo;s be healthy, together.
+                每週讀一篇，整年都快一步。
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-[15px] leading-relaxed text-cream/65">
-                Book the free call, join the weekly brief, or start with a household
-                kit. Small steps now beat a difficult fortnight later.
+                訂閱簡報、從精選指南開始讀起，或把居家檢查清單印下來貼在冰箱上。今天的一小步，勝過之後難熬的兩週。
               </p>
               <Button href={site.ctaHref} size="lg" className="mt-8">
                 {site.ctaLabel}
@@ -53,8 +52,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Logo tone="dark" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
-              Nurse-led infectious disease prevention for families, schools and
-              workplaces. Evidence translated into habits, delivered without fear.
+              由護理師執筆的傳染病防治文章——把證據翻譯成習慣，不製造恐懼。
             </p>
             <ul className="mt-6 flex gap-3">
               {socials.map((social) => (
@@ -71,28 +69,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          <nav aria-label="Footer" className="grid gap-10 sm:grid-cols-3 lg:col-span-7">
+          <nav aria-label="頁尾導覽" className="grid gap-10 sm:grid-cols-3 lg:col-span-7">
             <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/55">
-                Services
+                熱門主題
               </h3>
               <ul className="mt-5 space-y-3">
-                {services.map((service) => (
-                  <li key={service.id}>
-                    <a
-                      href="#services"
-                      className="text-sm text-cream/65 underline-offset-4 transition-colors hover:text-gold-300 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 rounded"
-                    >
-                      {service.title}
-                    </a>
-                  </li>
-                ))}
+                {topics
+                  .filter((topic) => topic !== '全部')
+                  .map((topic) => (
+                    <li key={topic}>
+                      <a
+                        href="#articles"
+                        className="text-sm text-cream/65 underline-offset-4 transition-colors hover:text-gold-300 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 rounded"
+                      >
+                        {topic}
+                      </a>
+                    </li>
+                  ))}
               </ul>
             </div>
 
             <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/55">
-                Explore
+                探索
               </h3>
               <ul className="mt-5 space-y-3">
                 {navLinks.map((link) => (
@@ -110,7 +110,7 @@ export default function Footer() {
 
             <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/55">
-                Contact
+                聯絡
               </h3>
               <ul className="mt-5 space-y-3 text-sm text-cream/65">
                 <li>
@@ -122,7 +122,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>{site.responseTime}</li>
-                <li>Online worldwide · On-site regionally</li>
+                <li>線上閱讀 · 全球華語讀者</li>
               </ul>
             </div>
           </nav>
@@ -131,8 +131,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-cream/55 sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {site.name}. Prevention education — not a
-            substitute for medical diagnosis or emergency care.
+            © {new Date().getFullYear()} {site.name}
+            。內容為預防衛教，不能取代醫療診斷或緊急照護。
           </p>
           <a
             href="#top"
@@ -141,7 +141,7 @@ export default function Footer() {
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300',
             )}
           >
-            Back to top
+            回到頂部
             <Icon name="arrowUp" className="h-3.5 w-3.5" />
           </a>
         </div>

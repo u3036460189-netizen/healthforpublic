@@ -10,7 +10,7 @@ export default function Logo({ tone = 'light', className }) {
       href="#top"
       className={cn('group inline-flex items-center gap-3 rounded-2xl', className)}
     >
-      <span className="sr-only">Back to top — </span>
+      <span className="sr-only">回到頂部 — </span>
       <span
         className={cn(
           'grid h-10 w-10 shrink-0 place-items-center rounded-full ring-1 transition-colors duration-300',

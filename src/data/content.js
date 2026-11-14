@@ -1,187 +1,151 @@
 export const site = {
   name: 'Health for Public',
-  tagline: "Let's be healthy",
+  tagline: '一起健康',
   // One place to change the primary CTA everywhere it appears.
-  ctaLabel: 'Book a free consultation',
+  ctaLabel: '訂閱每週防疫簡報',
   ctaHref: '#contact',
   email: 'hello@healthforpublic.com',
-  responseTime: 'Replies within one working day',
+  responseTime: '一個工作天內回覆',
 }
 
 export const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Our approach', href: '#approach' },
-  { label: 'Field notes', href: '#notes' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: '文章', href: '#articles' },
+  { label: '我們的理念', href: '#approach' },
+  { label: '常見問題', href: '#faq' },
+  { label: '聯絡', href: '#contact' },
 ]
 
 export const trustPoints = [
-  'Nurse-led guidance',
-  'Evidence-based, plain language',
-  'For homes, schools & workplaces',
+  '護理師撰寫，有憑有據',
+  '每週更新白話指南',
+  '適合家庭、學校與職場',
 ]
 
 export const stats = [
-  { value: 18000, suffix: '+', label: 'People reached through community sessions' },
-  { value: 240, suffix: '+', label: 'School and workplace workshops delivered' },
-  { value: 96, suffix: '%', label: 'Would recommend to a friend or colleague' },
-  { value: 35, suffix: '', label: 'Neighbourhoods and communities served' },
+  { value: 18000, suffix: '+', label: '人次透過簡報與社區講座受益' },
+  { value: 120, suffix: '+', label: '篇白話防疫文章與指南' },
+  { value: 96, suffix: '%', label: '讀者帶走一個今天就做得到的方法' },
+  { value: 12, suffix: '', label: '年社區衛生護理經驗作為後盾' },
 ]
 
-export const services = [
+export const topics = ['全部', '預防', '疫情', '日常習慣', '家庭照顧']
+
+export const posts = [
   {
-    id: 'consultation',
-    icon: 'heart',
-    title: '1:1 Prevention Consultation',
-    description:
-      "Bring your household's real questions. We map the risks that matter for your age, work and travel, then leave you with a one-page plan you will actually follow.",
-    format: 'Online · 45 minutes',
-    price: '$49',
+    id: 'flu-checklist',
+    category: '預防',
+    title: '防禦流感季：10 分鐘完成的全家檢查清單',
+    excerpt:
+      '這週真正值得做的五件事，以及大家都在擔心、但其實影響很小的三件事。',
+    readTime: '6 分鐘',
+    date: '2026/11/12',
+    tone: 'sage',
     featured: true,
-    badge: 'Most booked',
   },
   {
-    id: 'kit',
-    icon: 'box',
-    title: 'Household Protection Kit',
-    description:
-      'A season-ready box for the hallway cupboard: masks, sanitiser, a thermometer, rehydration salts and plain-language cards for every room.',
-    format: 'Ships in 2–3 days',
-    price: '$39',
+    id: 'hand-hygiene',
+    category: '日常習慣',
+    title: '真正有效的洗手方式（以及多數人漏掉的五個時機）',
+    excerpt: '肥皂、時間與擦乾：護理師版本的實用指引，沒有說教。',
+    readTime: '4 分鐘',
+    date: '2026/10/29',
+    tone: 'gold',
   },
   {
-    id: 'workshops',
-    icon: 'users',
-    title: 'School & Workplace Workshops',
-    description:
-      'Ninety minutes of practical, non-scary training: hand hygiene, how outbreaks spread, and what to do in the first 48 hours. Built for real rooms, not slideshows.',
-    format: 'On-site or online · groups to 40',
-    price: 'From $450',
+    id: 'measles-adults',
+    category: '疫情',
+    title: '麻疹又回來了：未接種疫苗的成人該知道的事',
+    excerpt:
+      '為什麼一個病例會變成二十個、誰需要補種，以及如何在十分鐘內查到自己的接種紀錄。',
+    readTime: '8 分鐘',
+    date: '2026/10/14',
+    tone: 'clay',
   },
   {
-    id: 'briefing',
-    icon: 'mail',
-    title: 'Seasonal Outbreak Briefing',
-    description:
-      'One short email each week plus a monthly live Q&A, so you hear about outbreaks from a nurse reading the data — not from a frightening headline.',
-    format: 'Membership · weekly',
-    price: '$9/mo',
+    id: 'norovirus-72h',
+    category: '疫情',
+    title: '家裡的諾羅病毒：72 小時防堵計畫',
+    excerpt:
+      '它幾天內就傳遍全家。如何管理一間病室、一間浴室，和一條非常盡責的毛巾。',
+    readTime: '5 分鐘',
+    date: '2026/09/30',
+    tone: 'sage',
   },
   {
-    id: 'travel',
-    icon: 'globe',
-    title: 'Travel & Migrant Health Check',
-    description:
-      'A pre-travel briefing on vaccines, water, food and local outbreaks, plus a printable checklist to take to your travel clinic appointment.',
-    format: 'Online · 30 minutes',
-    price: '$59',
+    id: 'adult-vaccines',
+    category: '預防',
+    title: '成人疫苗：50 歲之後被遺忘的補種',
+    excerpt:
+      '破傷風、帶狀皰疹、肺炎鏈球菌與年度流感：哪些是常規、哪些較新，以及如何查詢自己的紀錄。',
+    readTime: '7 分鐘',
+    date: '2026/09/18',
+    tone: 'gold',
   },
   {
-    id: 'course',
-    icon: 'book',
-    title: 'Caregiver Hygiene Course',
-    description:
-      'Six self-paced lessons for anyone caring for young children, elders or an immunocompromised family member. Short videos, checklists, no jargon.',
-    format: 'Self-paced · 6 lessons',
-    price: '$29',
+    id: 'school-sores',
+    category: '家庭照顧',
+    title: '鏈球菌感染、膿痂疹，與「她今天能上學嗎？」的掙扎',
+    excerpt: '疹子、發燒，以及每位家長早晨最怕的決定：護理師的經驗法則。',
+    readTime: '5 分鐘',
+    date: '2026/09/04',
+    tone: 'clay',
+  },
+  {
+    id: 'masks-2026',
+    category: '日常習慣',
+    title: '2026 年還需要口罩嗎：什麼時候它仍值得戴上',
+    excerpt:
+      '沒有人喜歡口罩。但這些時候，它默默勝過其他所有方法——其他時候，它只是儀式。',
+    readTime: '4 分鐘',
+    date: '2026/08/21',
+    tone: 'sage',
   },
 ]
 
 export const principles = [
   {
-    title: 'Translate the science',
-    body: 'Guidance is only useful if it survives a busy Tuesday. Every recommendation is written for the kitchen table, not the journal.',
+    title: '把科學翻譯成人話',
+    body: '知識只有在忙碌的星期二也用得上，才算有用。每篇文章都為廚房餐桌而寫，不是為期刊。',
   },
   {
-    title: 'Meet people where they are',
-    body: 'Different homes have different budgets, languages and constraints. Plans are built around what you can actually do this week.',
+    title: '走進人們的生活',
+    body: '每個家庭的預算、語言與現實限制都不同。所有建議都落在「本週就做得到」的事上。',
   },
   {
-    title: 'Prevent, do not panic',
-    body: 'Calm, specific steps beat fear every time. No scare tactics, no miracle claims, no shame.',
-  },
-]
-
-export const steps = [
-  {
-    title: 'Book a conversation',
-    body: 'Pick a time that suits you and tell me who you are protecting and what has been worrying you.',
-  },
-  {
-    title: 'Leave with a plan',
-    body: 'A short, prioritised checklist for your household — what to do now, what can wait, what to watch.',
-  },
-  {
-    title: 'Stay a step ahead',
-    body: 'Seasonal reminders, outbreak alerts and a nurse to ask when something changes in your community.',
-  },
-]
-
-export const posts = [
-  {
-    category: 'Prevention',
-    title: 'Flu season without the fear: a 10-minute household checklist',
-    excerpt:
-      'The five things worth doing this week — and the three everyone worries about that barely change your risk.',
-    readTime: '6 min read',
-    date: '12 Nov 2026',
-    tone: 'sage',
-  },
-  {
-    category: 'Everyday habits',
-    title: 'Hand hygiene that actually works (and the five moments people skip)',
-    excerpt:
-      'Soap, timing and drying: a nurse’s plain-language version of the guidance, minus the lecture.',
-    readTime: '4 min read',
-    date: '29 Oct 2026',
-    tone: 'gold',
-  },
-  {
-    category: 'Outbreaks',
-    title: 'Measles is back: what unvaccinated adults need to know',
-    excerpt:
-      'Why one case can become twenty, who needs a booster, and how to check your records in ten minutes.',
-    readTime: '8 min read',
-    date: '14 Oct 2026',
-    tone: 'clay',
+    title: '預防，而非恐慌',
+    body: '冷靜、具體的步驟永遠勝過恐嚇。沒有聳動標題，沒有奇蹟療法，也沒有羞辱。',
   },
 ]
 
 export const faqs = [
   {
-    question: 'Is this a replacement for seeing my doctor?',
+    question: '文章由誰撰寫與把關？',
     answer:
-      'No. Health for Public is prevention education and public health nursing support. I do not diagnose, prescribe or provide emergency care. If you are unwell, contact your doctor or local health service — and call your emergency number for anything urgent.',
+      '每篇指南都由我——一位有十二年社區衛生經驗的註冊護理師——親自撰寫，發布前並對照最新的公共衛生指引。指引更新時，文章會加上標註日期的更新說明。',
   },
   {
-    question: 'Who are the consultations designed for?',
+    question: '讀這些等於醫療建議嗎？',
     answer:
-      'Parents and caregivers, older adults, people living with a chronic condition or a weakened immune system, teachers, and managers responsible for a workplace. If you are unsure whether it fits, book the free call and we will work it out together.',
+      '不是。Health for Public 是預防衛教，無法診斷、開藥或取代你的醫師。任何緊急狀況，請直接聯絡當地醫療服務或撥打緊急電話。',
   },
   {
-    question: 'How do online consultations work?',
+    question: '多久會有新內容？',
     answer:
-      'You receive a private video link after booking. We talk for 45 minutes, and you leave with a written summary and a one-page prevention plan. A recording is available on request.',
+      '大多數週刊出一篇深入文章，加上週二簡報——三分鐘摘要目前流行什麼、該養成哪個習慣、該放下哪個迷思。',
   },
   {
-    question: 'Do the protection kits ship internationally?',
+    question: '涵蓋哪些主題？',
     answer:
-      'Kits ship regionally within 2–3 working days. For other countries I send a digital pack with a local shopping list, so you can build the same kit from a nearby pharmacy.',
+      '最貼近生活的傳染病：流感、諾羅病毒、麻疹、鏈球菌感染等；還有日常預防習慣、疫情解讀，以及給照顧者與學校的建議。罕見疾病我會引導你到專業來源，而不是瞎猜。',
   },
   {
-    question: 'Can you train our whole school or company?',
+    question: '可以建議主題或發問嗎？',
     answer:
-      'Yes. Sessions run on-site or online for up to 40 people, with group pricing, invoices and follow-up materials. Larger teams can be split across two sessions.',
+      '非常歡迎。讀者的問題決定發稿順序，最好的問題會寫成完整文章，或收進每月 Q&A。來信請寄 hello@healthforpublic.com。',
   },
   {
-    question: 'What if I need to reschedule?',
+    question: '舊文章會更新嗎？',
     answer:
-      'Life happens. Move your booking free of charge up to 24 hours before the start time; a recording or summary is still yours to keep.',
-  },
-  {
-    question: 'How is my information handled?',
-    answer:
-      'Consultation notes are kept confidential and never shared or sold. Payments are processed by a secure provider, and you can ask for your notes to be deleted at any time.',
+      '會。每份季節性指南在該季來臨前都會重新審閱；更新日期標示在文章頂端，修正也會公開說明，而不是悄悄改掉。',
   },
 ]
