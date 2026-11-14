@@ -17,13 +17,13 @@ export const navLinks = [
 
 export const trustPoints = [
   '護理師撰寫，有憑有據',
-  '每週更新白話指南',
+  '每週更新淺白實用指南',
   '適合家庭、學校與職場',
 ]
 
 export const stats = [
   { value: 18000, suffix: '+', label: '人次透過簡報與社區講座受益' },
-  { value: 120, suffix: '+', label: '篇白話防疫文章與指南' },
+  { value: 120, suffix: '+', label: '篇淺白易明的防疫文章與指南' },
   { value: 96, suffix: '%', label: '讀者帶走一個今天就做得到的方法' },
   { value: 12, suffix: '', label: '年社區衛生護理經驗作為後盾' },
 ]

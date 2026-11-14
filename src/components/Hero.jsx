@@ -61,7 +61,7 @@ export default function Hero() {
 
             <Reveal delay={180}>
               <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-ink/70 sm:text-lg">
-                我是一位公共衛生護理師，用白話寫出貼近家庭的傳染病防治文章——哪些方法真的有效、哪些可以忽略，以及第一步該做什麼。
+                我是一位公共衛生護理師，把傳染病防治知識寫成簡單易明的文章——哪些方法真的有效、哪些可以忽略，第一步又該做什麼。
               </p>
             </Reveal>
 

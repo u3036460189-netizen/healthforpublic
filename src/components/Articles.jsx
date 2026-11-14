@@ -127,7 +127,7 @@ export default function Articles() {
         <SectionHeading
           id="articles-title"
           eyebrow="防疫筆記"
-          title="關於保持健康，全部說成白話"
+          title="防疫知識，淺白說給你聽"
           description="來自社區現場的短文，誠實、好用——關於最貼近生活的傳染病、真正有效的做法，以及你可以直接忽略的事。"
         />
 
