@@ -127,6 +127,12 @@ const glyphs = {
       <circle cx="13.8" cy="13.4" r="0.9" fill="currentColor" stroke="none" />
     </>
   ),
+  search: () => (
+    <>
+      <circle cx="11" cy="11" r="7" />
+      <path d="m16.5 16.5 4 4" />
+    </>
+  ),
   stethoscope: () => (
     <>
       <path d="M6 3.5v4.2a3.6 3.6 0 0 0 7.2 0V3.5" />

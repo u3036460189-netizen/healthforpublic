@@ -10,6 +10,7 @@ export const site = {
 
 export const navLinks = [
   { label: '文章', href: '#articles' },
+  { label: '傳染病百科', href: '#notifiable' },
   { label: '我們的理念', href: '#approach' },
   { label: '常見問題', href: '#faq' },
   { label: '聯絡', href: '#contact' },
@@ -118,6 +119,11 @@ export const principles = [
 ]
 
 export const faqs = [
+  {
+    question: '甚麼是「須呈報傳染病」？家長要留意甚麼？',
+    answer:
+      '香港《預防及控制疾病條例》（第599章）列明53種法定須呈報傳染病，註冊醫生發現懷疑或證實個案必須通知衞生防護中心，以便追蹤接觸者及防止擴散。家長的角色：及早就醫並說明接觸史與外遊史、讓患病子女依指引留家、按時接種疫苗。詳情可參考下方「傳染病百科」。',
+  },
   {
     question: '文章由誰撰寫與把關？',
     answer:

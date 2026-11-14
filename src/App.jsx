@@ -2,6 +2,7 @@ import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Stats from './components/Stats.jsx'
 import Articles from './components/Articles.jsx'
+import Notifiable from './components/Notifiable.jsx'
 import Mission from './components/Mission.jsx'
 import MidCta from './components/MidCta.jsx'
 import Newsletter from './components/Newsletter.jsx'
@@ -24,6 +25,7 @@ export default function App() {
         <Hero />
         <Stats />
         <Articles />
+        <Notifiable />
         <Mission />
         <MidCta />
         <Newsletter />
