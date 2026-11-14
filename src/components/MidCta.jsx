@@ -17,17 +17,18 @@ export default function MidCta() {
             </div>
 
             <div className="relative mx-auto max-w-2xl">
+              <img src={`${import.meta.env.BASE_URL}images/checklist-art.svg`} alt="紙張與核對符號的裝飾插畫" width="600" height="450" loading="lazy" className="mx-auto mb-5 h-36 w-auto sm:h-44" />
               <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink/70">
-                免費下載
+                實用清單
               </p>
               <h2
                 id="midcta-title"
                 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl"
               >
-                拿走這份 10 分鐘居家檢查清單。
+                居家防疫清單，隨時查閱。
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-ink/70 sm:text-base">
-                這是我陪伴家庭走過的完整檢查流程：每個房間五項檢查，一頁搞定，沒有術語。訂閱後會隨週二簡報一起寄到你的信箱。
+                網站現有的清單可在頁面上打勾及列印；無需訂閱或下載。
               </p>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -40,9 +41,7 @@ export default function MidCta() {
                 </Button>
               </div>
 
-              <p className="mt-5 text-xs font-medium text-ink/70">
-                可打勾、可列印 · 訂閱簡報即可收齊全套清單
-              </p>
+              <p className="mt-5 text-xs font-medium text-ink/70">可打勾、可列印</p>
             </div>
           </div>
         </Reveal>

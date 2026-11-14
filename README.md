@@ -14,14 +14,14 @@ npm run watch        # 開啟有介面的瀏覽器即場瀏覽
 npm run news:update  # 從衞生防護中心 RSS 抓取最新新聞（更新 src/data/news.json）
 ```
 
-## 新聞自動更新（每兩日）
+## 新聞定期更新
 
-`src/data/news.json` 由 `scripts/fetch-news.mjs` 從衞生防護中心 RSS
-（`pressreleases_zh_tw_RSS.xml`）抓取生成。全自動方案：
+`src/data/news.json` 由 `scripts/fetch-news.mjs` 從衞生防護中心 RSS、港台國際新聞及
+Outbreak News Today 抓取生成。自動化方案：
 
 1. 把 repo 推上 GitHub（`website` 已包含 `.github/workflows/update-news.yml`）。
-2. Workflow 每 2 日（香港時間早上 6:00）執行抓取並 commit 變更。
-3. 託管平台（GitHub Pages / Netlify / Vercel）偵測 push 後自動重建 → 網站新聞每兩日更新。
+2. Workflow 按排程嘗試抓取並 commit 變更；`*/2` 是按日期逢雙日執行，不保證嚴格每 48 小時，GitHub Actions 排程亦可能延遲。
+3. 託管平台（GitHub Pages / Netlify / Vercel）偵測 push 後重新建置；請以新聞區最後更新日期為準。
 
 沒有 CI 時亦可手動執行 `npm run news:update` 後重新部署。
 
@@ -37,7 +37,7 @@ npm run news:update  # 從衞生防護中心 RSS 抓取最新新聞（更新 src
 
 ## 頁面結構
 
-Hero → 數據速覽 → 文章（主題篩選 + 精選指南）→ 我們的理念 → 免費下載 CTA → 每週簡報訂閱 → 常見問題 → 頁尾 CTA
+Hero → 文章待填提示 → 傳染病百科 → 實用清單 → 疫情新聞 → 我們的理念 → 清單入口 → 常見問題 → 頁尾 CTA
 
 ```
 index.html                 SEO meta（zh-Hant）、Google Fonts、JSON-LD
@@ -46,20 +46,16 @@ src/
   main.jsx                 React 進入點
   index.css                僅 Tailwind 指令
   App.jsx                  頁面組裝 + 跳轉連結
-  data/content.js          所有文案：CTA、文章、主題、統計、FAQ
+  data/content.js          導覽、理念、FAQ 文案
   hooks/
     useInView.js           IntersectionObserver 進場偵測
-    useCountUp.js          數字動畫（支援 prefers-reduced-motion）
     useScrolled.js         導覽列捲動狀態
   components/
     Navbar.jsx             吸頂毛玻璃導覽、行動選單、閱讀進度條
-    Hero.jsx               首屏標題、CTA、信任要點
-    HeroArt.jsx            有機風格 SVG 插畫 + 浮動玻璃卡片 + 旋轉徽章
-    Stats.jsx              進場數字動畫
-    Articles.jsx           文章主軸：主題篩選（useState）、精選大卡、文章卡
-    Mission.jsx            香港護士理念 + 毛玻璃引言（深色區）
-    MidCta.jsx             金色免費下載 CTA
-    Newsletter.jsx         每週簡報訂閱（驗證 + 成功狀態）
+    Hero.jsx               首屏標題及現有內容入口
+    Articles.jsx           未有正式文章時的待填提示
+    Mission.jsx            香港護士理念及九年臨床經驗
+    MidCta.jsx             現有清單入口
     News.jsx               香港傳染病新聞速遞（每兩日自動更新）
     Faq.jsx                無障礙手風琴（單開）
     Footer.jsx             收尾 CTA、主題/探索/聯絡欄
@@ -69,5 +65,6 @@ src/
 ## 備註
 
 - 主要 CTA 文字集中在一處：`src/data/content.js` → `site.ctaLabel`。
+- 未經確認的人數、見證、講座、聯絡電郵及訂閱服務已移除；文章及聯絡方式待提供真實資料後再補。
 - 字體：Inter + Noto Sans TC（標題）、Manrope + Noto Sans TC（內文），Google Fonts 載入。
 - 無障礙：語意化標籤、跳轉連結、aria-expanded 手風琴、focus ring、reduced-motion 支援。

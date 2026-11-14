@@ -1,14 +1,14 @@
 import { cn } from '../lib/cn.js'
-import { navLinks, site, topics } from '../data/content.js'
+import { navLinks, site } from '../data/content.js'
 import Button from './ui/Button.jsx'
 import Icon from './ui/Icon.jsx'
 import Logo from './ui/Logo.jsx'
 import Reveal from './ui/Reveal.jsx'
 
 const socials = [
-  { label: '寫信給我們', href: `mailto:${site.email}`, icon: 'mail' },
-  { label: '每週防疫簡報', href: '#contact', icon: 'sparkle' },
-  { label: '防疫筆記文章', href: '#articles', icon: 'book' },
+  { label: '傳染病百科', href: '#notifiable', icon: 'book' },
+  { label: '實用清單', href: '#checklists', icon: 'check' },
+  { label: '疫情新聞', href: '#news', icon: 'sparkle' },
 ]
 
 export default function Footer() {
@@ -31,10 +31,10 @@ export default function Footer() {
                 id="footer-cta-title"
                 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight text-cream sm:text-[2.5rem]"
               >
-                每週讀一篇，整年都快一步。
+                有疑問時，從可靠資料開始。
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-[15px] leading-relaxed text-cream/65">
-                訂閱簡報、從精選指南開始讀起，或把居家檢查清單印下來貼在冰箱上。今天的一小步，勝過之後難熬的兩週。
+                查閱傳染病百科及實用清單；需要醫療判斷時，請向醫護人員求助。
               </p>
               <Button href={site.ctaHref} size="lg" className="mt-8">
                 {site.ctaLabel}
@@ -69,27 +69,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <nav aria-label="頁尾導覽" className="grid gap-10 sm:grid-cols-3 lg:col-span-7">
-            <div>
-              <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/55">
-                熱門主題
-              </h3>
-              <ul className="mt-5 space-y-3">
-                {topics
-                  .filter((topic) => topic !== '全部')
-                  .map((topic) => (
-                    <li key={topic}>
-                      <a
-                        href="#articles"
-                        className="text-sm text-cream/65 underline-offset-4 transition-colors hover:text-gold-300 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 rounded"
-                      >
-                        {topic}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-
+          <nav aria-label="頁尾導覽" className="grid gap-10 sm:grid-cols-2 lg:col-span-7">
             <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/55">
                 探索
@@ -114,15 +94,8 @@ export default function Footer() {
               </h3>
               <ul className="mt-5 space-y-3 text-sm text-cream/65">
                 <li>
-                  <a
-                    href={`mailto:${site.email}`}
-                    className="underline-offset-4 transition-colors hover:text-gold-300 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 rounded"
-                  >
-                    {site.email}
-                  </a>
+                  聯絡方式：[待填]
                 </li>
-                <li>{site.responseTime}</li>
-                <li>線上閱讀 · 全球華語讀者</li>
               </ul>
             </div>
           </nav>

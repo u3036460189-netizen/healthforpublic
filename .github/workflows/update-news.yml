@@ -1,4 +1,4 @@
-# 每 2 日自動從衞生防護中心抓取最新新聞公報，
+# 按排程嘗試抓取香港及世界傳染病新聞；
 # 更新 src/data/news.json 後 commit，觸發託管平台自動重建網站。
 # （配合 GitHub Pages / Netlify / Vercel 使用即可全自動更新）
 
@@ -6,7 +6,7 @@ name: Update CHP news
 
 on:
   schedule:
-    - cron: '0 22 */2 * *' # UTC 22:00 = 香港時間早上 6:00，每兩日
+    - cron: '0 22 */2 * *' # 逢雙日 UTC 22:00；不保證每 48 小時或準時執行
   workflow_dispatch: {} # 允許手動觸發
 
 permissions:

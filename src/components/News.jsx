@@ -80,7 +80,7 @@ export default function News() {
             id="news-title"
             eyebrow="最新動態"
             title="香港與世界傳染病新聞"
-            description="抓取衞生防護中心公報與全球疫情消息，每兩日自動更新——掌握第一手防疫資訊。"
+            description="整理香港衞生防護中心公報及其他來源的世界疫情消息；請以原文與發布日期為準。"
           />
           <div className="flex flex-col items-start gap-1.5 md:items-end">
             <span className="inline-flex items-center gap-2 rounded-full border border-sage/40 bg-sage-100 px-3.5 py-1.5 text-[11px] font-semibold text-sage-600">
@@ -88,7 +88,7 @@ export default function News() {
                 <span className="absolute inline-flex h-full w-full animate-pulse-soft rounded-full bg-sage motion-reduce:animate-none" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-sage-600" />
               </span>
-              每 2 日自動更新
+              定期擷取來源
             </span>
             {newsData.generatedAt && (
               <p className="text-[11px] text-ink/50">
@@ -148,7 +148,7 @@ export default function News() {
           >
             {activeData?.source || '衞生防護中心新聞公報'}
           </a>
-          。個案資訊以官方公布為準，本站只作整理轉述。
+          。世界新聞來源並非全部為官方機構；請點開原文核對。本站只提供連結與標題。
         </p>
       </div>
     </section>

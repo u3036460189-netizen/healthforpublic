@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">守護與預防</title>
+  <desc id="desc">金色盾牌與綠色葉子的抽象插畫</desc>
+  <defs>
+    <radialGradient id="bg"><stop stop-color="#756333" stop-opacity=".4"/><stop offset=".7" stop-color="#20231e" stop-opacity=".25"/><stop offset="1" stop-color="#0b0b0f"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6dda0"/><stop offset=".42" stop-color="#c9a84c"/><stop offset="1" stop-color="#826530"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1db" stop-opacity=".3"/><stop offset=".55" stop-color="#92aa98" stop-opacity=".07"/><stop offset="1" stop-color="#e7dba8" stop-opacity=".16"/></linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7d8a9"/><stop offset="1" stop-color="#4f7663"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="720" height="560" fill="#0b0b0f"/>
+  <rect width="720" height="560" fill="url(#bg)"/>
+  <ellipse cx="360" cy="298" rx="176" ry="207" fill="#c9a84c" opacity=".12" filter="url(#glow)"/>
+  <g fill="none" stroke="#c9a84c" opacity=".2">
+    <circle cx="360" cy="270" r="220"/>
+    <circle cx="360" cy="270" r="254" stroke-dasharray="2 12"/>
+    <circle cx="360" cy="270" r="180" stroke-dasharray="1 9"/>
+  </g>
+  <g fill="#f7e3a8" opacity=".7">
+    <circle cx="116" cy="194" r="2"/><circle cx="563" cy="103" r="2"/><circle cx="616" cy="392" r="3"/>
+    <circle cx="155" cy="394" r="2"/><circle cx="513" cy="463" r="2"/>
+  </g>
+  <path d="M360 69 535 133v133c0 124-69 200-175 251C254 466 185 390 185 266V133Z" fill="url(#glass)" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M360 98 508 151v116c0 103-56 175-148 220-92-45-148-117-148-220V151Z" fill="none" stroke="#e5d5a6" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M360 353c-4-67 29-126 105-159-4 98-34 152-105 159Z" fill="url(#leaf)"/>
+  <path d="M360 353c-4-67-29-126-105-159 4 98 34 152 105 159Z" fill="#799b76"/>
+  <path d="M360 401V251m0 108c26-47 57-83 105-165m-105 165c-26-47-57-83-105-165" fill="none" stroke="#d5e5bb" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+</svg>

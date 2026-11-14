@@ -8,9 +8,9 @@ import Button from './ui/Button.jsx'
 import Icon from './ui/Icon.jsx'
 
 const socials = [
-  { label: '寫信給我們', href: `mailto:${site.email}`, icon: 'mail' },
-  { label: '每週防疫簡報', href: '#contact', icon: 'sparkle' },
-  { label: '防疫筆記文章', href: '#articles', icon: 'book' },
+  { label: '傳染病百科', href: '#notifiable', icon: 'book' },
+  { label: '實用清單', href: '#checklists', icon: 'check' },
+  { label: '疫情新聞', href: '#news', icon: 'sparkle' },
 ]
 
 export default function Navbar() {

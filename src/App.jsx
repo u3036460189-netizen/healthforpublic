@@ -1,13 +1,11 @@
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
-import Stats from './components/Stats.jsx'
 import Articles from './components/Articles.jsx'
 import Notifiable from './components/Notifiable.jsx'
 import Checklists from './components/Checklists.jsx'
 import News from './components/News.jsx'
 import Mission from './components/Mission.jsx'
 import MidCta from './components/MidCta.jsx'
-import Newsletter from './components/Newsletter.jsx'
 import Faq from './components/Faq.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -25,14 +23,12 @@ export default function App() {
 
       <main id="main">
         <Hero />
-        <Stats />
         <Articles />
         <Notifiable />
         <Checklists />
         <News />
         <Mission />
         <MidCta />
-        <Newsletter />
         <Faq />
       </main>
 

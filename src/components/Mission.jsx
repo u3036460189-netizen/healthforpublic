@@ -1,10 +1,10 @@
-import { principles, site } from '../data/content.js'
+import { principles } from '../data/content.js'
 import Button from './ui/Button.jsx'
 import Icon from './ui/Icon.jsx'
 import Reveal from './ui/Reveal.jsx'
 import SectionHeading from './ui/SectionHeading.jsx'
 
-const credentials = ['香港註冊護士', '12 年前線及社區經驗', '衞生教育講師']
+const credentials = ['香港護士', '九年臨床經驗']
 
 export default function Mission() {
   return (
@@ -35,11 +35,10 @@ export default function Mission() {
             <Reveal delay={120}>
               <div className="mt-6 max-w-xl space-y-4 text-[15px] leading-relaxed text-cream/70 sm:text-base">
                 <p>
-                  過去十二年，我在社區衛生現場工作——校門口、鄰里診間、職員餐廳。一次又一次，我遇到想做對事情的家庭，卻被矛盾又嚇人的資訊淹沒。
+                  我是一位有九年臨床經驗的香港護士。本站整理傳染病防治資訊，方便家長與照顧者查閱。
                 </p>
                 <p>
-                  Health for Public
-                  就是我的答案：由一位香港護士，把傳染病科學翻譯成小而可行的步驟——讓流感、麻疹和其他疾病，遇到的是有準備的家庭。
+                  Health for Public 以淺白文字整理防疫資訊，協助家庭查找實用的預防方法。
                 </p>
               </div>
             </Reveal>
@@ -66,30 +65,13 @@ export default function Mission() {
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                   />
                 </Button>
-                <a
-                  href={`mailto:${site.email}`}
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-cream/70 underline-offset-4 transition-colors hover:text-gold-300 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
-                >
-                  <Icon name="mail" className="h-4 w-4" />
-                  直接寫信給我
-                </a>
               </div>
             </Reveal>
           </div>
 
-          {/* Glass quote + principles */}
+          {/* Principles */}
           <Reveal delay={150}>
-            <figure className="relative rounded-[2.25rem] border border-white/15 bg-white/5 p-8 shadow-soft backdrop-blur-xl sm:p-10">
-              <Icon name="quote" className="h-8 w-8 text-gold" strokeWidth={1.4} />
-              <blockquote className="mt-5 font-display text-xl font-medium leading-snug text-cream sm:text-2xl">
-                &ldquo;公共衛生不是要你害怕，而是清楚知道下一步該做什麼——然後一起做到。&rdquo;
-              </blockquote>
-              <figcaption className="mt-5 text-sm text-cream/55">
-                ——講座參與者，河岸社區中心
-              </figcaption>
-            </figure>
-
-            <ol className="mt-8 space-y-6">
+            <ol className="space-y-6 rounded-[2.25rem] border border-white/15 bg-white/5 p-8 shadow-soft backdrop-blur-xl sm:p-10">
               {principles.map((principle, index) => (
                 <li key={principle.title} className="flex gap-5">
                   <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-gold/40 bg-gold/10 font-display text-sm font-semibold text-gold-300">
