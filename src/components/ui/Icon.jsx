@@ -134,6 +134,7 @@ const glyphs = {
       <path d="M10 20v-5.5h4V20" />
     </>
   ),
+  play: () => <path d="M9.5 7v10l8.5-5-8.5-5Z" fill="currentColor" stroke="none" />,
   search: () => (
     <>
       <circle cx="11" cy="11" r="7" />

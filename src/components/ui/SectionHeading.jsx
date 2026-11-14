@@ -1,4 +1,5 @@
 import { cn } from '../../lib/cn.js'
+import Icon from './Icon.jsx'
 
 export default function SectionHeading({
   eyebrow,
@@ -21,15 +22,12 @@ export default function SectionHeading({
       {eyebrow && (
         <p
           className={cn(
-            'flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em]',
+            'flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em]',
             align === 'center' && 'justify-center',
             dark ? 'text-gold-300' : 'text-gold-800',
           )}
         >
-          <span
-            aria-hidden="true"
-            className="h-px w-8 bg-current opacity-50"
-          />
+          <Icon name="sparkle" className="h-3.5 w-3.5" strokeWidth={1.5} />
           {eyebrow}
         </p>
       )}
@@ -37,7 +35,7 @@ export default function SectionHeading({
       <h2
         id={id}
         className={cn(
-          'mt-4 font-display text-[1.85rem] font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.85rem]',
+          'mt-4 font-serif text-[1.9rem] font-semibold leading-[1.22] tracking-tight sm:text-4xl lg:text-[2.7rem]',
           dark ? 'text-cream' : 'text-ink',
         )}
       >

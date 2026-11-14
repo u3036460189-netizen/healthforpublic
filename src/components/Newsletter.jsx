@@ -39,6 +39,8 @@ export default function Newsletter() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <div className="absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(52%_52%_at_50%_0%,rgba(201,168,76,0.16),transparent_70%)]" />
         <div className="absolute -bottom-24 left-1/3 h-80 w-80 rounded-full bg-sage/15 blur-3xl" />
+        <div className="absolute -top-24 right-[12%] h-[130%] w-20 origin-top rotate-[28deg] bg-gradient-to-b from-gold/20 to-transparent blur-2xl" />
+        <div className="absolute -top-24 right-[24%] h-[130%] w-12 origin-top rotate-[36deg] bg-gradient-to-b from-cream/10 to-transparent blur-2xl" />
       </div>
 
       <div className="container relative">
@@ -51,7 +53,7 @@ export default function Newsletter() {
                 tone="dark"
                 eyebrow="掌握最新動態"
                 title="每週防疫簡報"
-                description="每週二一封短郵件：你的地區正在流行什麼、一個該養成的習慣、一個該退休的迷思。護理師執筆，三分鐘讀完。"
+                description="每週二一封短郵件：你的地區正在流行什麼、一個該養成的習慣、一個該退休的迷思。香港護士執筆，三分鐘讀完。"
               />
             </Reveal>
 

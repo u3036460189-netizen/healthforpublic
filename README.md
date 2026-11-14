@@ -11,7 +11,19 @@ npm run build        # 正式建置至 dist/
 npm run preview      # 預覽正式建置
 npm run test:layout  # Playwright 多尺寸 layout 掃描（需先啟動 dev server）
 npm run watch        # 開啟有介面的瀏覽器即場瀏覽
+npm run news:update  # 從衞生防護中心 RSS 抓取最新新聞（更新 src/data/news.json）
 ```
+
+## 新聞自動更新（每兩日）
+
+`src/data/news.json` 由 `scripts/fetch-news.mjs` 從衞生防護中心 RSS
+（`pressreleases_zh_tw_RSS.xml`）抓取生成。全自動方案：
+
+1. 把 repo 推上 GitHub（`website` 已包含 `.github/workflows/update-news.yml`）。
+2. Workflow 每 2 日（香港時間早上 6:00）執行抓取並 commit 變更。
+3. 託管平台（GitHub Pages / Netlify / Vercel）偵測 push 後自動重建 → 網站新聞每兩日更新。
+
+沒有 CI 時亦可手動執行 `npm run news:update` 後重新部署。
 
 > 這台電腦的 `git` / `npm` 不在 PATH，需用完整路徑：
 > `"C:\Program Files\Git\cmd\git.exe"`、`"C:\Program Files\nodejs\npm.cmd"`。
@@ -45,9 +57,10 @@ src/
     HeroArt.jsx            有機風格 SVG 插畫 + 浮動玻璃卡片 + 旋轉徽章
     Stats.jsx              進場數字動畫
     Articles.jsx           文章主軸：主題篩選（useState）、精選大卡、文章卡
-    Mission.jsx            護理師理念 + 毛玻璃引言（深色區）
+    Mission.jsx            香港護士理念 + 毛玻璃引言（深色區）
     MidCta.jsx             金色免費下載 CTA
     Newsletter.jsx         每週簡報訂閱（驗證 + 成功狀態）
+    News.jsx               香港傳染病新聞速遞（每兩日自動更新）
     Faq.jsx                無障礙手風琴（單開）
     Footer.jsx             收尾 CTA、主題/探索/聯絡欄
     ui/                    Button、Icon、Logo、Reveal、SectionHeading

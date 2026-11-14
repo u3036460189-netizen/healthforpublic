@@ -155,3 +155,105 @@ export const returnToSchoolList = {
   ],
   note: '以上建議只基於一般傳染期考慮；病假長短須以主診醫生的專業判斷為準。標有「須呈報」的疾病，醫生須依法通知衞生防護中心。',
 }
+
+// 外傭清潔防疫清單（中文 / Filipino / Bahasa Indonesia）
+export const helperChecklist = {
+  id: 'helper',
+  intro: {
+    zh: '給外傭姐姐的日常防疫指南。完成一項打一個勾，全部完成後請通知僱主檢查。',
+    fil: 'Gabay sa pang-araw-araw na pag-iwas sa sakit para sa domestic helper. I-tsek ang bawat aytem pagkatapos gawin, at sabihin sa amo kapag tapos na.',
+    ind: 'Panduan pencegahan penyakit harian untuk asisten rumah tangga. Centang setiap butir setelah selesai, lalu beri tahu majikan.',
+  },
+  groups: [
+    {
+      name: { zh: '每日', fil: 'Daily', ind: 'Harian' },
+      items: [
+        {
+          zh: '用梘液洗手最少 20 秒，尤其如廁後與煮食前',
+          fil: 'Hugasan ang kamay ng sabon nang hindi bababa sa 20 segundo, lalo na pagkatapos ng banyo at bago magluto',
+          ind: 'Cuci tangan dengan sabon minimal 20 detik, terutama setelah ke toilet dan sebelum memasak',
+        },
+        {
+          zh: '生肉與熟食分開處理，肉類必須徹底煮熟',
+          fil: 'Hiwalayin ang hilaw at lutong pagkain; lutuin nang mabuti ang karne',
+          ind: 'Pisahkan makanan mentah dan matang; masak daging sampai benar-benar matang',
+        },
+        {
+          zh: '每天清潔及消毒廚房檯面與水槽',
+          fil: 'Linisin at i-disinfect ang kitchen counter at lababo araw-araw',
+          ind: 'Bersihkan dan disinfektan meja dapur serta bak pencucian setiap hari',
+        },
+        {
+          zh: '每日清倒垃圾並綁好垃圾袋',
+          fil: 'Itapon ang basura araw-araw at italî nang maayos ang bag',
+          ind: 'Buang sampah setiap hari dan ikat kantong sampah dengan rapat',
+        },
+        {
+          zh: '每天開窗通風兩次，每次 30 分鐘',
+          fil: 'Buksan ang mga bintana dalawang beses sa isang araw, 30 minuto bawat isa',
+          ind: 'Buka jendela dua kali sehari, masing-masing 30 menit',
+        },
+      ],
+    },
+    {
+      name: { zh: '每週', fil: 'Weekly', ind: 'Mingguan' },
+      items: [
+        {
+          zh: '每週更換床單被套，並以熱水清洗',
+          fil: 'Palitan ang bedsheets kada linggo; labhan sa mainit na tubig',
+          ind: 'Ganti sprei setiap minggu; cuci dengan air panas',
+        },
+        {
+          zh: '刷洗浴室地板，並向所有去水位倒入清水',
+          fil: 'Kuskusin ang sahig ng banyo; buhusan ng tubig ang mga drainage',
+          ind: 'Sikat lantai kamar mandi; tuang air bersih ke semua saluran pembuangan',
+        },
+        {
+          zh: '消毒門柄、電燈開關及遙控器',
+          fil: 'I-disinfect ang door knob, light switch at remote control',
+          ind: 'Disinfektan gagang pintu, saklar lampu, dan remote control',
+        },
+        {
+          zh: '清洗小朋友的玩具及個人物品',
+          fil: 'Hugasan ang mga laruan at personal na gamit ng bata',
+          ind: 'Cuci mainan anak dan barang pribadi anak-anak',
+        },
+        {
+          zh: '清潔冷氣機隔塵網及風扇',
+          fil: 'Linisin ang filter ng aircon at electric fan',
+          ind: 'Bersihkan filter AC dan kipas angin',
+        },
+      ],
+    },
+    {
+      name: { zh: '有人不適時', fil: 'If someone is sick', ind: 'Jika ada yang sakit' },
+      items: [
+        {
+          zh: '家中任何人感到不適，立即通知僱主',
+          fil: 'Ialam agad sa amo kapag may may sakit sa pamilya',
+          ind: 'Segera beri tahu majikan jika ada anggota keluarga yang sakit',
+        },
+        {
+          zh: '照顧病人時戴上口罩及手套，事後徹底洗手',
+          fil: 'Isuot ang mask at gloves habang nag-aalaga ng may sakit; hugasan nang mabuti ang kamay pagkatapos',
+          ind: 'Gunakan masker dan sarung tangan saat merawat orang sakit; cuci tangan menyeluruh setelahnya',
+        },
+        {
+          zh: '病人的餐具及毛巾分開使用和清洗',
+          fil: 'Hiwalay na kutsara, tinidor at tuwalya para sa may sakit',
+          ind: 'Pisahkan peralatan makan dan handuk orang yang sakit',
+        },
+        {
+          zh: '每日以稀釋漂白水消毒病人接觸過的表面',
+          fil: 'I-disinfect araw-araw ang mga nahawakan ng may sakit gamit ang diluted bleach',
+          ind: 'Disinfektan permukaan yang disentuh pasien dengan pemutih encer setiap hari',
+        },
+        {
+          zh: '自己不適時通知僱主並盡快求醫',
+          fil: 'Kapag ikaw ay masama ang pakiramdam, sabihin sa amo at magpatingin agad sa doktor',
+          ind: 'Jika Anda merasa tidak sehat, beri tahu majikan dan segera periksakan diri',
+        },
+      ],
+    },
+  ],
+}

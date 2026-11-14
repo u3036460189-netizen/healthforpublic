@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { cn } from '../lib/cn.js'
 import {
+  helperChecklist,
   homeChecklist,
   returnToSchoolList,
   vaccineChecklist,
@@ -15,6 +16,7 @@ const tabs = [
   { id: homeChecklist.id, label: '居家防疫檢查', icon: 'house' },
   { id: vaccineChecklist.id, label: '疫苗時間表核對', icon: 'calendar' },
   { id: returnToSchoolList.id, label: '復課條件速查', icon: 'book' },
+  { id: helperChecklist.id, label: '外傭清潔清單', icon: 'users' },
 ]
 
 function loadChecked() {
@@ -25,7 +27,7 @@ function loadChecked() {
   }
 }
 
-function CheckItem({ id, label, checkedState, onToggle }) {
+function CheckItem({ id, label, sublabel, checkedState, onToggle }) {
   const done = Boolean(checkedState[id])
   return (
     <label
@@ -45,8 +47,18 @@ function CheckItem({ id, label, checkedState, onToggle }) {
       >
         <Icon name="check" className="h-3.5 w-3.5" strokeWidth={3} />
       </span>
-      <span className="text-sm leading-relaxed text-ink/75 transition-colors duration-200 peer-checked:text-ink/40 peer-checked:line-through">
-        {label}
+      <span className="min-w-0">
+        <span className="block text-sm leading-relaxed text-ink/75 transition-colors duration-200 peer-checked:text-ink/40 peer-checked:line-through">
+          {label}
+        </span>
+        {sublabel?.map((line) => (
+          <span
+            key={line}
+            className="block text-[12px] leading-relaxed text-ink/50 transition-colors duration-200 peer-checked:text-ink/30 peer-checked:line-through"
+          >
+            {line}
+          </span>
+        ))}
       </span>
     </label>
   )
@@ -250,6 +262,71 @@ function SchoolPanel({ data }) {
   )
 }
 
+/** 外傭清潔防疫清單（中文 / Filipino / Bahasa Indonesia） */
+function HelperPanel({ data, checkedState, toggle, reset }) {
+  const ids = data.groups.flatMap((group, gi) =>
+    group.items.map((_, i) => `${data.id}-${gi}-${i}`),
+  )
+  const done = ids.filter((id) => checkedState[id]).length
+
+  return (
+    <div>
+      <div className="rounded-2xl border border-gold/30 bg-gold/10 p-4">
+        <p className="text-sm leading-relaxed text-ink/75">{data.intro.zh}</p>
+        <p className="mt-1.5 text-[12px] leading-relaxed text-ink/55">{data.intro.fil}</p>
+        <p className="mt-1 text-[12px] leading-relaxed text-ink/55">{data.intro.ind}</p>
+      </div>
+
+      <div className="mt-5">
+        <ProgressBar done={done} total={ids.length} />
+      </div>
+
+      <div className="mt-6 space-y-4">
+        {data.groups.map((group, gi) => (
+          <div
+            key={group.name.zh}
+            className="rounded-3xl border border-ink/10 bg-cream-100 p-5 shadow-card"
+          >
+            <h3 className="flex flex-wrap items-baseline gap-x-3 font-display text-[1.05rem] font-semibold tracking-tight text-ink">
+              {group.name.zh}
+              <span className="text-[12px] font-medium italic text-ink/50">
+                {group.name.fil} / {group.name.ind}
+              </span>
+            </h3>
+            <ul className="mt-2 divide-y divide-ink/5">
+              {group.items.map((item, i) => {
+                const id = `${data.id}-${gi}-${i}`
+                return (
+                  <li key={id}>
+                    <CheckItem
+                      id={id}
+                      label={item.zh}
+                      sublabel={[item.fil, item.ind]}
+                      checkedState={checkedState}
+                      onToggle={() => toggle(id)}
+                    />
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-6 flex justify-end">
+        <button
+          type="button"
+          onClick={reset}
+          className="inline-flex items-center gap-1.5 rounded-full border border-ink/15 px-4 py-2 text-[13px] font-semibold text-ink/70 transition-colors hover:border-ink/35 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600"
+        >
+          <Icon name="close" className="h-3.5 w-3.5" />
+          重設這份清單
+        </button>
+      </div>
+    </div>
+  )
+}
+
 export default function Checklists() {
   const [active, setActive] = useState(tabs[0].id)
   const [checkedState, setCheckedState] = useState(loadChecked)
@@ -356,7 +433,7 @@ export default function Checklists() {
                 data={homeChecklist}
                 checkedState={checkedState}
                 toggle={toggle}
-                reset={reset}
+                reset={() => reset(homeChecklist.id)}
               />
             )}
             {active === vaccineChecklist.id && (
@@ -364,11 +441,19 @@ export default function Checklists() {
                 data={vaccineChecklist}
                 checkedState={checkedState}
                 toggle={toggle}
-                reset={reset}
+                reset={() => reset(vaccineChecklist.id)}
               />
             )}
             {active === returnToSchoolList.id && (
               <SchoolPanel data={returnToSchoolList} />
+            )}
+            {active === helperChecklist.id && (
+              <HelperPanel
+                data={helperChecklist}
+                checkedState={checkedState}
+                toggle={toggle}
+                reset={() => reset(helperChecklist.id)}
+              />
             )}
           </div>
         </Reveal>

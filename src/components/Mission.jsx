@@ -4,7 +4,7 @@ import Icon from './ui/Icon.jsx'
 import Reveal from './ui/Reveal.jsx'
 import SectionHeading from './ui/SectionHeading.jsx'
 
-const credentials = ['註冊護理師', '12 年社區衛生經驗', '衛教講師']
+const credentials = ['香港註冊護士', '12 年前線及社區經驗', '衞生教育講師']
 
 export default function Mission() {
   return (
@@ -28,7 +28,7 @@ export default function Mission() {
                 id="approach-title"
                 tone="dark"
                 eyebrow="我們的理念"
-                title="嗨——我是寫下 Health for Public 的護理師。"
+                title="嗨——我是寫下 Health for Public 的香港護士。"
               />
             </Reveal>
 
@@ -39,7 +39,7 @@ export default function Mission() {
                 </p>
                 <p>
                   Health for Public
-                  就是我的答案：由一位護理師，把傳染病科學翻譯成小而可行的步驟——讓流感、麻疹和其他疾病，遇到的是有準備的家庭。
+                  就是我的答案：由一位香港護士，把傳染病科學翻譯成小而可行的步驟——讓流感、麻疹和其他疾病，遇到的是有準備的家庭。
                 </p>
               </div>
             </Reveal>

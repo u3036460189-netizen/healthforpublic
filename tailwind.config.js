@@ -47,6 +47,7 @@ export default {
       fontFamily: {
         display: ['Inter', '"Noto Sans TC"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         sans: ['Manrope', '"Noto Sans TC"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Noto Serif TC"', 'Georgia', 'serif'],
       },
       borderRadius: {
         '4xl': '2rem',

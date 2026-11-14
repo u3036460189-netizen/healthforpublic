@@ -4,6 +4,7 @@ import Stats from './components/Stats.jsx'
 import Articles from './components/Articles.jsx'
 import Notifiable from './components/Notifiable.jsx'
 import Checklists from './components/Checklists.jsx'
+import News from './components/News.jsx'
 import Mission from './components/Mission.jsx'
 import MidCta from './components/MidCta.jsx'
 import Newsletter from './components/Newsletter.jsx'
@@ -28,6 +29,7 @@ export default function App() {
         <Articles />
         <Notifiable />
         <Checklists />
+        <News />
         <Mission />
         <MidCta />
         <Newsletter />

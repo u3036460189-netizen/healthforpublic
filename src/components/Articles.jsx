@@ -69,8 +69,8 @@ function FeaturedCard({ post }) {
           <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-semibold text-ink">
             閱讀這篇指南
             <Icon
-              name="arrowRight"
-              className="h-4 w-4 text-gold-600 transition-transform duration-300 group-hover:translate-x-1"
+              name="arrowUpRight"
+              className="h-4 w-4 text-gold-600 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             />
           </span>
         </div>
@@ -102,8 +102,8 @@ function PostCard({ post, delay }) {
           <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-ink">
             閱讀文章
             <Icon
-              name="arrowRight"
-              className="h-4 w-4 text-gold-600 transition-transform duration-300 group-hover:translate-x-1"
+              name="arrowUpRight"
+              className="h-4 w-4 text-gold-600 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             />
           </span>
         </div>

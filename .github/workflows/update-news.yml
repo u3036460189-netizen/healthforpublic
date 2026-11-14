@@ -1,0 +1,38 @@
+# 每 2 日自動從衞生防護中心抓取最新新聞公報，
+# 更新 src/data/news.json 後 commit，觸發託管平台自動重建網站。
+# （配合 GitHub Pages / Netlify / Vercel 使用即可全自動更新）
+
+name: Update CHP news
+
+on:
+  schedule:
+    - cron: '0 22 */2 * *' # UTC 22:00 = 香港時間早上 6:00，每兩日
+  workflow_dispatch: {} # 允許手動觸發
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch latest CHP press releases
+        run: node scripts/fetch-news.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/news.json
+          if git diff --cached --quiet; then
+            echo "沒有新聞更新"
+          else
+            git commit -m "chore: update CHP news [skip ci]"
+            git push
+          fi

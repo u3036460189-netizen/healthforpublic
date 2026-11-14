@@ -12,13 +12,14 @@ export const navLinks = [
   { label: '文章', href: '#articles' },
   { label: '傳染病百科', href: '#notifiable' },
   { label: '實用清單', href: '#checklists' },
+  { label: '疫情動態', href: '#news' },
   { label: '我們的理念', href: '#approach' },
   { label: '常見問題', href: '#faq' },
   { label: '聯絡', href: '#contact' },
 ]
 
 export const trustPoints = [
-  '護理師撰寫，有憑有據',
+  '香港護士撰寫，有憑有據',
   '每週更新淺白實用指南',
   '適合家庭、學校與職場',
 ]
@@ -27,7 +28,7 @@ export const stats = [
   { value: 18000, suffix: '+', label: '人次透過簡報與社區講座受益' },
   { value: 120, suffix: '+', label: '篇淺白易明的防疫文章與指南' },
   { value: 96, suffix: '%', label: '讀者帶走一個今天就做得到的方法' },
-  { value: 12, suffix: '', label: '年社區衛生護理經驗作為後盾' },
+  { value: 12, suffix: '', label: '年香港臨床與社區衞生經驗作為後盾' },
 ]
 
 export const topics = ['全部', '預防', '疫情', '日常習慣', '家庭照顧']
@@ -48,7 +49,7 @@ export const posts = [
     id: 'hand-hygiene',
     category: '日常習慣',
     title: '真正有效的洗手方式（以及多數人漏掉的五個時機）',
-    excerpt: '肥皂、時間與擦乾：護理師版本的實用指引，沒有說教。',
+    excerpt: '肥皂、時間與擦乾：香港護士版本的實用指引，沒有說教。',
     readTime: '4 分鐘',
     date: '2026/10/29',
     tone: 'gold',
@@ -87,7 +88,7 @@ export const posts = [
     id: 'school-sores',
     category: '家庭照顧',
     title: '鏈球菌感染、膿痂疹，與「她今天能上學嗎？」的掙扎',
-    excerpt: '疹子、發燒，以及每位家長早晨最怕的決定：護理師的經驗法則。',
+    excerpt: '疹子、發燒，以及每位家長早晨最怕的決定：香港護士的經驗法則。',
     readTime: '5 分鐘',
     date: '2026/09/04',
     tone: 'clay',
@@ -128,7 +129,7 @@ export const faqs = [
   {
     question: '文章由誰撰寫與把關？',
     answer:
-      '每篇指南都由我——一位有十二年社區衛生經驗的註冊護理師——親自撰寫，發布前並對照最新的公共衛生指引。指引更新時，文章會加上標註日期的更新說明。',
+      '每篇指南都由我——一位在香港醫療體系有十二年經驗的註冊護士——親自撰寫，發布前並對照最新的公共衛生指引。指引更新時，文章會加上標註日期的更新說明。',
   },
   {
     question: '讀這些等於醫療建議嗎？',

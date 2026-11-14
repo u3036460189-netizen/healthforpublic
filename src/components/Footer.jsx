@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Logo tone="dark" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
-              由護理師執筆的傳染病防治文章——把證據翻譯成習慣，不製造恐懼。
+              由香港護士執筆的傳染病防治文章——把證據翻譯成習慣，不製造恐懼。
             </p>
             <ul className="mt-6 flex gap-3">
               {socials.map((social) => (

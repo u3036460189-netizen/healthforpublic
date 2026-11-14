@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:layout": "node tests/layout-check.mjs",
-    "watch": "node tests/watch.mjs"
+    "watch": "node tests/watch.mjs",
+    "news:update": "node scripts/fetch-news.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",
