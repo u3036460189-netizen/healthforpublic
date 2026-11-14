@@ -122,7 +122,7 @@ export default function Articles() {
   const rest = visible.filter((post) => !post.featured)
 
   return (
-    <section id="articles" aria-labelledby="articles-title" className="py-20 sm:py-28">
+    <section id="articles" aria-labelledby="articles-title" className="py-20 sm:py-28 print:hidden">
       <div className="container">
         <SectionHeading
           id="articles-title"

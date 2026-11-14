@@ -9,7 +9,7 @@ export default function Hero() {
     <section
       id="top"
       aria-labelledby="hero-title"
-      className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-36 lg:pb-24 lg:pt-44"
+      className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-36 lg:pb-24 lg:pt-44 print:hidden"
     >
       {/* Ambient background */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">

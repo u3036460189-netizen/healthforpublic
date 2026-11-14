@@ -11,6 +11,7 @@ export const site = {
 export const navLinks = [
   { label: '文章', href: '#articles' },
   { label: '傳染病百科', href: '#notifiable' },
+  { label: '實用清單', href: '#checklists' },
   { label: '我們的理念', href: '#approach' },
   { label: '常見問題', href: '#faq' },
   { label: '聯絡', href: '#contact' },

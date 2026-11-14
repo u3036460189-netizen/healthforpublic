@@ -59,7 +59,7 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="faq" aria-labelledby="faq-title" className="py-20 sm:py-28">
+    <section id="faq" aria-labelledby="faq-title" className="py-20 sm:py-28 print:hidden">
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">

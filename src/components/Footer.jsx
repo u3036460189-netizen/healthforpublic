@@ -13,7 +13,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ink pb-10 pt-16 text-cream sm:pt-20" aria-labelledby="footer-cta-title">
+    <footer className="bg-ink pb-10 pt-16 text-cream sm:pt-20 print:hidden" aria-labelledby="footer-cta-title">
       <div className="container">
         {/* Closing CTA */}
         <Reveal>

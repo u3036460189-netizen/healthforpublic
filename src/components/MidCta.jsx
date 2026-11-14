@@ -1,11 +1,10 @@
-import { site } from '../data/content.js'
 import Button from './ui/Button.jsx'
 import Icon from './ui/Icon.jsx'
 import Reveal from './ui/Reveal.jsx'
 
 export default function MidCta() {
   return (
-    <section aria-labelledby="midcta-title" className="pb-4 sm:pb-8">
+    <section aria-labelledby="midcta-title" className="pb-4 sm:pb-8 print:hidden">
       <div className="container">
         <Reveal>
           <div className="relative overflow-hidden rounded-[2.5rem] bg-gold px-6 py-14 text-center shadow-gold sm:px-12 sm:py-16">
@@ -32,8 +31,8 @@ export default function MidCta() {
               </p>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                <Button href={site.ctaHref} variant="ink" size="lg">
-                  把清單寄給我
+                <Button href="#checklists" variant="ink" size="lg">
+                  即場打開居家檢查清單
                   <Icon
                     name="arrowRight"
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -42,7 +41,7 @@ export default function MidCta() {
               </div>
 
               <p className="mt-5 text-xs font-medium text-ink/70">
-                加入 4,200 個認真防疫的家庭 · 隨時取消訂閱
+                可打勾、可列印 · 訂閱簡報即可收齊全套清單
               </p>
             </div>
           </div>

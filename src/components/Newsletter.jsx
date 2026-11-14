@@ -33,7 +33,7 @@ export default function Newsletter() {
     <section
       id="contact"
       aria-labelledby="newsletter-title"
-      className="relative overflow-hidden bg-ink py-20 text-cream sm:py-28"
+      className="relative overflow-hidden bg-ink py-20 text-cream sm:py-28 print:hidden"
     >
       {/* Ambient background */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">

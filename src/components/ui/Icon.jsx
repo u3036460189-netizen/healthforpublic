@@ -127,6 +127,13 @@ const glyphs = {
       <circle cx="13.8" cy="13.4" r="0.9" fill="currentColor" stroke="none" />
     </>
   ),
+  house: () => (
+    <>
+      <path d="M4 10.5 12 4l8 6.5" />
+      <path d="M6.5 9.5V20h11V9.5" />
+      <path d="M10 20v-5.5h4V20" />
+    </>
+  ),
   search: () => (
     <>
       <circle cx="11" cy="11" r="7" />

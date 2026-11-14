@@ -23,7 +23,7 @@ export default function Stats() {
   return (
     <section
       aria-label="防疫成效速覽"
-      className="border-y border-ink/10 bg-cream-100/70"
+      className="border-y border-ink/10 bg-cream-100/70 print:hidden"
     >
       <div className="container">
         <div className="grid grid-cols-1 gap-8 py-12 sm:grid-cols-2 sm:py-14 lg:grid-cols-4">

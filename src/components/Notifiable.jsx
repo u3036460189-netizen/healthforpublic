@@ -158,7 +158,7 @@ export default function Notifiable() {
     <section
       id="notifiable"
       aria-labelledby="notifiable-title"
-      className="border-y border-ink/10 bg-cream-100/70 py-20 sm:py-28"
+      className="border-y border-ink/10 bg-cream-100/70 py-20 sm:py-28 print:hidden"
     >
       <div className="container">
         <SectionHeading
