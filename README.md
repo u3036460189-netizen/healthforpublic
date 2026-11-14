@@ -6,13 +6,22 @@
 
 ```bash
 npm install
-npm run dev      # 本機開發伺服器（http://localhost:5173）
-npm run build    # 正式建置至 dist/
-npm run preview  # 預覽正式建置
+npm run dev          # 本機開發伺服器（http://localhost:5173）
+npm run build        # 正式建置至 dist/
+npm run preview      # 預覽正式建置
+npm run test:layout  # Playwright 多尺寸 layout 掃描（需先啟動 dev server）
+npm run watch        # 開啟有介面的瀏覽器即場瀏覽
 ```
 
 > 這台電腦的 `git` / `npm` 不在 PATH，需用完整路徑：
 > `"C:\Program Files\Git\cmd\git.exe"`、`"C:\Program Files\nodejs\npm.cmd"`。
+
+## Layout 掃描（tests/layout-check.mjs）
+
+用 Playwright（playwright-core + 系統 Edge/Chrome，免下載瀏覽器）在 320–1440px 六個尺寸檢查：
+頁面水平溢出、文字超出視窗或被裁切、文字重疊（含有效可見性判斷）、導覽列遮擋、
+行動選單切換、FAQ 手風琴、主題篩選、字體載入、console 錯誤與網路請求失敗。
+截圖輸出至 `tests/screenshots/`。
 
 ## 頁面結構
 
