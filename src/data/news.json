@@ -1,43 +1,31 @@
 {
-  "generatedAt": "2026-11-16T01:30:59.990Z",
+  "generatedAt": "2026-11-18T03:16:30.051Z",
   "hk": {
     "source": "香港衞生防護中心新聞公報",
     "sourceUrl": "https://www.chp.gov.hk/tc/media/116/index.html",
     "items": [
       {
+        "title": "世界消除子宮頸癌日：疫苗與篩查並重　攜手守護婦女健康",
+        "link": "https://www.chp.gov.hk/tc/media/116/110570.html",
+        "date": "2026/11/16",
+        "lang": "zh"
+      },
+      {
+        "title": "衞生署舉行「白水晶」跨部門公共衞生演習　提升防控新型傳染病的應變能力和防範意識（附圖）",
+        "link": "https://www.chp.gov.hk/tc/media/116/110569.html",
+        "date": "2026/11/16",
+        "lang": "zh"
+      },
+      {
+        "title": "衞生署公布退伍軍人病個案最新情況",
+        "link": "https://www.chp.gov.hk/tc/media/116/110563.html",
+        "date": "2026/11/15",
+        "lang": "zh"
+      },
+      {
         "title": "一名早前公布的兒童流感嚴重個案患者病逝",
         "link": "https://www.chp.gov.hk/tc/media/116/110560.html",
         "date": "2026/11/12",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生防護中心調查一宗猴痘輸入個案",
-        "link": "https://www.chp.gov.hk/tc/media/116/110559.html",
-        "date": "2026/11/12",
-        "lang": "zh"
-      },
-      {
-        "title": "人類乳頭瘤病毒疫苗補種計劃將於下月底完結　衞生署呼籲合資格女性香港居民盡快接種完成以預防子宮頸癌",
-        "link": "https://www.chp.gov.hk/tc/media/116/110556.html",
-        "date": "2026/11/11",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生署澄清有關新冠疫苗的接種安排",
-        "link": "https://www.chp.gov.hk/tc/media/116/110553.html",
-        "date": "2026/11/10",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生防護中心調查一宗猴痘確診個案",
-        "link": "https://www.chp.gov.hk/tc/media/116/110552.html",
-        "date": "2026/11/10",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生署署長到幼稚園視察季節性流感疫苗學校外展活動　鼓勵全港學校和家長盡早安排學童接種以築牢免疫屏障（附圖）",
-        "link": "https://www.chp.gov.hk/tc/media/116/110551.html",
-        "date": "2026/11/10",
         "lang": "zh"
       },
       {
