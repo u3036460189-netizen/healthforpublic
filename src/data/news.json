@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-11-18T03:16:30.051Z",
+  "generatedAt": "2026-11-20T02:46:42.733Z",
   "hk": {
     "source": "香港衞生防護中心新聞公報",
     "sourceUrl": "https://www.chp.gov.hk/tc/media/116/index.html",
     "items": [
+      {
+        "title": "衞生防護中心調查一宗猴痘輸入個案",
+        "link": "https://www.chp.gov.hk/tc/media/116/110575.html",
+        "date": "2026/11/17",
+        "lang": "zh"
+      },
       {
         "title": "世界消除子宮頸癌日：疫苗與篩查並重　攜手守護婦女健康",
         "link": "https://www.chp.gov.hk/tc/media/116/110570.html",
@@ -20,12 +26,6 @@
         "title": "衞生署公布退伍軍人病個案最新情況",
         "link": "https://www.chp.gov.hk/tc/media/116/110563.html",
         "date": "2026/11/15",
-        "lang": "zh"
-      },
-      {
-        "title": "一名早前公布的兒童流感嚴重個案患者病逝",
-        "link": "https://www.chp.gov.hk/tc/media/116/110560.html",
-        "date": "2026/11/12",
         "lang": "zh"
       },
       {
