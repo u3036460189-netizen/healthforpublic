@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-11-20T02:46:42.733Z",
+  "generatedAt": "2026-11-22T01:50:57.094Z",
   "hk": {
     "source": "香港衞生防護中心新聞公報",
     "sourceUrl": "https://www.chp.gov.hk/tc/media/116/index.html",
     "items": [
+      {
+        "title": "蚊傳疾病登革熱和基孔肯雅熱的最新情況",
+        "link": "https://www.chp.gov.hk/tc/media/116/110581.html",
+        "date": "2026/11/19",
+        "lang": "zh"
+      },
       {
         "title": "衞生防護中心調查一宗猴痘輸入個案",
         "link": "https://www.chp.gov.hk/tc/media/116/110575.html",
@@ -20,12 +26,6 @@
         "title": "衞生署舉行「白水晶」跨部門公共衞生演習　提升防控新型傳染病的應變能力和防範意識（附圖）",
         "link": "https://www.chp.gov.hk/tc/media/116/110569.html",
         "date": "2026/11/16",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生署公布退伍軍人病個案最新情況",
-        "link": "https://www.chp.gov.hk/tc/media/116/110563.html",
-        "date": "2026/11/15",
         "lang": "zh"
       },
       {
