@@ -1,9 +1,21 @@
 {
-  "generatedAt": "2026-11-22T01:50:57.094Z",
+  "generatedAt": "2026-11-24T05:42:03.550Z",
   "hk": {
     "source": "香港衞生防護中心新聞公報",
     "sourceUrl": "https://www.chp.gov.hk/tc/media/116/index.html",
     "items": [
+      {
+        "title": "衞生署公布退伍軍人病個案最新情況",
+        "link": "https://www.chp.gov.hk/tc/media/116/110583.html",
+        "date": "2026/11/22",
+        "lang": "zh"
+      },
+      {
+        "title": "衞生防護中心調查一宗侵入性腦膜炎雙球菌感染個案",
+        "link": "https://www.chp.gov.hk/tc/media/116/110582.html",
+        "date": "2026/11/21",
+        "lang": "zh"
+      },
       {
         "title": "蚊傳疾病登革熱和基孔肯雅熱的最新情況",
         "link": "https://www.chp.gov.hk/tc/media/116/110581.html",
@@ -14,18 +26,6 @@
         "title": "衞生防護中心調查一宗猴痘輸入個案",
         "link": "https://www.chp.gov.hk/tc/media/116/110575.html",
         "date": "2026/11/17",
-        "lang": "zh"
-      },
-      {
-        "title": "世界消除子宮頸癌日：疫苗與篩查並重　攜手守護婦女健康",
-        "link": "https://www.chp.gov.hk/tc/media/116/110570.html",
-        "date": "2026/11/16",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生署舉行「白水晶」跨部門公共衞生演習　提升防控新型傳染病的應變能力和防範意識（附圖）",
-        "link": "https://www.chp.gov.hk/tc/media/116/110569.html",
-        "date": "2026/11/16",
         "lang": "zh"
       },
       {
