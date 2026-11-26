@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-11-24T05:42:03.550Z",
+  "generatedAt": "2026-11-26T03:52:54.821Z",
   "hk": {
     "source": "香港衞生防護中心新聞公報",
     "sourceUrl": "https://www.chp.gov.hk/tc/media/116/index.html",
     "items": [
+      {
+        "title": "粵港澳防治傳染病聯席會議　推動深度對接「健康灣區」建設（附圖）",
+        "link": "https://www.chp.gov.hk/tc/media/116/110586.html",
+        "date": "2026/11/23",
+        "lang": "zh"
+      },
       {
         "title": "衞生署公布退伍軍人病個案最新情況",
         "link": "https://www.chp.gov.hk/tc/media/116/110583.html",
@@ -20,12 +26,6 @@
         "title": "蚊傳疾病登革熱和基孔肯雅熱的最新情況",
         "link": "https://www.chp.gov.hk/tc/media/116/110581.html",
         "date": "2026/11/19",
-        "lang": "zh"
-      },
-      {
-        "title": "衞生防護中心調查一宗猴痘輸入個案",
-        "link": "https://www.chp.gov.hk/tc/media/116/110575.html",
-        "date": "2026/11/17",
         "lang": "zh"
       },
       {
